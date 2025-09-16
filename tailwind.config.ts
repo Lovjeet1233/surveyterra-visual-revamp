@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         brand: ['Inter', 'sans-serif'],
+        logo: ['Spicy Rice', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
