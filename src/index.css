@@ -2,41 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Surveyterra Design System - Professional survey platform inspired design */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Core brand colors */
+    --background: 0 0% 95.3%; /* F3F3F3 */
+    --foreground: 210 15% 11%; /* 191A23 */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Surveyterra brand green */
+    --primary: 74 100% 69%; /* B9FF66 */
+    --primary-foreground: 210 15% 11%;
+    
+    /* Dark brand color */
+    --secondary: 210 15% 11%; /* 191A23 */
+    --secondary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted tones */
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 210 10% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent using brand green */
+    --accent: 74 100% 69%;
+    --accent-foreground: 210 15% 11%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 74 100% 69%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Surveyterra tokens */
+    --brand-green: 74 100% 69%; /* B9FF66 */
+    --brand-dark: 210 15% 11%; /* 191A23 */
+    --brand-light: 0 0% 95.3%; /* F3F3F3 */
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(74 100% 69%), hsl(74 100% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210 15% 11%), hsl(210 15% 20%));
+    --gradient-earnings: linear-gradient(135deg, hsl(74 100% 69%), hsl(50 100% 60%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(210 15% 11% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(210 15% 11% / 0.15);
+    --shadow-strong: 0 12px 40px -10px hsl(210 15% 11% / 0.2);
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
